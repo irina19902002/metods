@@ -6,9 +6,16 @@ public class Main {
         Car car2 = new Car();
         car1.start();
         car2.off();
+        car1.setYear(2014);
+        car2.setYear(4999);
+        car1.setType("new");
+        car2.setType("new");
+        car1.setColor("new1");
+        car2.setColor("new2");
+
         System.out.println(car1.getColor());
         System.out.println(car2.getColor());
-        System.out.println("Автомобиль car1 "+" " +car1.returYear(2020)+car1.returType(" Новый"));
-        System.out.println("Автомобиль car2 "+" " +car2.returYear(1990)+car2.returType(" Б.У"));
+        System.out.println("Автомобиль car1 "+" " +car1.getYear()+car1.getType());
+        System.out.println("Автомобиль car2 "+" " +car2.getYear()+car2.getType());
     }
 }

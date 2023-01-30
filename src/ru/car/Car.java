@@ -12,32 +12,43 @@ package ru.car;
 
 public class Car {
     private String color;
-    String type;
+    private String type;
     int year;
 
 
-    public void start(){
+    public void start() {
         System.out.println("Автомобиль заведен");
     }
 
-    public void off(){
+    public void off() {
         System.out.println("Автомобиль заглушен");
     }
 
-    public int returYear(int year){
-        this.year = year;
+    public int getYear() {
         return year;
     }
-    public String returType(String type){
-        this.type = type;
-        return type;
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
-    public String getColor(){
-        return color;
-    }
-    public Car(){
-        color="green";
+    public String getType() {
+        return type;}
 
+        public void setType(String type){
+            this.type = type;
+        }
+
+        public String getColor() {
+            return color.toUpperCase();
+        }
+
+        public void setColor(String color) {
+            this.color = color;
+        }
+
+    public Car() {
+            color = "green";
+
+        }
     }
-}
