@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println(car1.getColor());
         System.out.println(car2.getColor());
-        System.out.println("Автомобиль car1 "+" " +car1.getYear()+car1.getType());
-        System.out.println("Автомобиль car2 "+" " +car2.getYear()+car2.getType());
+        System.out.println("Автомобиль car1 " + " " + car1.getYear() + car1.getType());
+        System.out.println("Автомобиль car2 " + " " + car2.getYear() + car2.getType());
     }
 }
